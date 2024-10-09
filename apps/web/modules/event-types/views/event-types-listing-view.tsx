@@ -496,7 +496,7 @@ export const InfiniteEventTypeList = ({
                               {type.hidden && <Badge variant="gray">{t("hidden")}</Badge>}
                               <Tooltip
                                 content={
-                                  type.hidden ? t("show_eventtype_on_profile") : t("hide_from_profile")
+                                  t("show_eventtype_on_profile")
                                 }>
                                 <div className="self-center rounded-md p-2">
                                   <Switch
@@ -731,7 +731,7 @@ export const InfiniteEventTypeList = ({
                                 as={Label}
                                 htmlFor="hiddenSwitch"
                                 className="mt-2 inline cursor-pointer self-center pr-2 ">
-                                {type.hidden ? t("show_eventtype_on_profile") : t("hide_from_profile")}
+                                {t("show_eventtype_on_profile")}
                               </Skeleton>
                               <Switch
                                 id="hiddenSwitch"

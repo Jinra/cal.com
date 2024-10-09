@@ -119,9 +119,7 @@ function EventTypeSingleLayout({
                 )}
                 <Tooltip
                   sideOffset={4}
-                  content={
-                    formMethods.watch("hidden") ? t("show_eventtype_on_profile") : t("hide_from_profile")
-                  }
+                  content={t("show_eventtype_on_profile")}
                   side="bottom">
                   <div className="self-center rounded-md p-2">
                     <Switch
@@ -245,7 +243,7 @@ function EventTypeSingleLayout({
                   as={Label}
                   htmlFor="hiddenSwitch"
                   className="mt-2 inline cursor-pointer self-center pr-2 ">
-                  {formMethods.watch("hidden") ? t("show_eventtype_on_profile") : t("hide_from_profile")}
+                  {t("show_eventtype_on_profile")}
                 </Skeleton>
                 <Switch
                   id="hiddenSwitch"
